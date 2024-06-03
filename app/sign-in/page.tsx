@@ -1,7 +1,11 @@
-import React from "react";
+import SignInForm from "@/collections/Forms/SignInForm";
 
 const SignInPage = () => {
-  return <p>Sign in page</p>;
+  return (
+    <div className="h-screen flex flex-col justify-center items-center">
+      <SignInForm />
+    </div>
+  );
 };
 
 export default SignInPage;
