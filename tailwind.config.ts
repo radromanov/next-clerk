@@ -13,6 +13,19 @@ const config = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      "mobile-md": "375px",
+      "mobile-lg": "425px",
+      "tablet-sm": "640px",
+      "tablet-md": "768px",
+      "laptop-sm": "1024px",
+      "laptop-md": "1280px",
+      "laptop-lg": "1440px",
+      "desktop-sm": "1536px",
+      "desktop-md": "1680px",
+      "desktop-lg": "1920px",
+      "desktop-4k": "2560px",
+    },
     container: {
       center: true,
       padding: "2rem",

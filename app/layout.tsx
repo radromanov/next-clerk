@@ -24,7 +24,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             fontSans.variable
           )}
         >
-          <main className="min-h-screen">{children}</main>
+          {children}
         </body>
       </html>
     </ClerkProvider>
