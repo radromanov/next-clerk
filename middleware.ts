@@ -1,7 +1,7 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 // Used to protect all routes, exclduing ones passed in the array
-const isPublicRoute = createRouteMatcher(["/sign-in", "/sign-up"]);
+const isPublicRoute = createRouteMatcher(["/sign-in(.*)", "/sign-up(.*)"]);
 
 // Used to protect routes specified in the array
 // const isProtectedRoute = createRouteMatcher(["/dashboard(.*)"]);
