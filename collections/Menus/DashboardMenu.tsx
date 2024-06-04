@@ -18,7 +18,7 @@ const initialComboboxItems: {
   image: string | null;
 }[] = [
   {
-    label: "Acme Inc.",
+    label: "Acmasdasdadasdasdadasdasde Inc.",
     value: "acme inc.",
     image: null,
   },
@@ -31,19 +31,24 @@ const initialComboboxItems: {
 
 const DashboardMenu = () => {
   return (
-    <Menubar>
-      <Combobox elements={initialComboboxItems} />
-      <nav className="flex w-full items-center justify-between">
-        <ul className="flex gap-4">
-          {menuItems.map((item, i) => (
-            <ListItem key={i}>{item.label}</ListItem>
-          ))}
-        </ul>
-
+    <>
+      <div className="flex flex-grow gap-4">
+        <Combobox elements={initialComboboxItems} />
+        <nav className="flex w-full items-center justify-between">
+          <ul className="flex gap-4">
+            {menuItems.map((item, i) => (
+              <ListItem key={i} className={i === 0 ? "text-black" : ""}>
+                {item.label}
+              </ListItem>
+            ))}
+          </ul>
+        </nav>
+      </div>
+      <div className="flex gap-4">
         <Input name="search" placeholder="Search" />
         <UserButton />
-      </nav>
-    </Menubar>
+      </div>
+    </>
   );
 };
 

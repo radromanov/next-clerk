@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/popover";
 import { useUser } from "@clerk/nextjs";
 import Image from "next/image";
+import { Typography } from "../Typography/Typography";
 
 interface ComboboxProps {
   elements: { value: string; label: string; image: string | null }[];
@@ -41,7 +42,7 @@ const ElementDisplay = ({ element }: ImageDisplayProps) => {
       ) : (
         <div className="rounded-full bg-sky-400 w-6 h-6" />
       )}
-      {element.label}
+      <Typography width={144}>{element.label}</Typography>
     </div>
   );
 };
@@ -101,15 +102,12 @@ export function Combobox({ elements }: ComboboxProps) {
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger
-        asChild
-        className="flex gap-2 items-center justify-between"
-      >
+      <PopoverTrigger asChild className="flex items-center">
         <Button
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[232px] justify-between"
+          className="flex min-w-max w-[300px] px-2 gap-4 truncate items-center"
         >
           {value ? (
             <ElementDisplay
@@ -121,10 +119,10 @@ export function Combobox({ elements }: ComboboxProps) {
           ) : (
             <ElementDisplay element={userElement} />
           )}
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+          <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[232px] p-0">
+      <PopoverContent className="flex flex-col p-0 gap-4 w-[235px]">
         <Command>
           <CommandInput placeholder="Search team..." />
 

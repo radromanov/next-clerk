@@ -11,7 +11,13 @@ interface ListItemProps
 
 const ListItem = ({ children, className, ...props }: ListItemProps) => {
   return (
-    <li className={cn("", className)} {...props}>
+    <li
+      className={cn(
+        "text-sm text-neutral-500 cursor-pointer hover:text-black transition-colors",
+        className
+      )}
+      {...props}
+    >
       {children}
     </li>
   );
