@@ -28,7 +28,7 @@ const initialComboboxItems: {
   },
 ];
 
-const DashboardMenu = () => {
+export const DashboardMenu = () => {
   return (
     <>
       <div className="flex flex-grow gap-4">
@@ -50,5 +50,3 @@ const DashboardMenu = () => {
     </>
   );
 };
-
-export default DashboardMenu;
