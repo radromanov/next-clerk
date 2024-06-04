@@ -6,6 +6,7 @@ import {
   ActivityIcon,
 } from "@/collections";
 import { DashboardCard } from "@/collections/Cards";
+import { DashboardChart } from "@/collections/Charts";
 import { DashboardTab } from "@/collections/Tabs";
 
 const informationCards: {
@@ -59,6 +60,8 @@ export const DashboardMain = () => {
           </li>
         ))}
       </ul>
+
+      <DashboardChart />
     </>
   );
 };

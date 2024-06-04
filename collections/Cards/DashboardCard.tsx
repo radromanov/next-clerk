@@ -21,20 +21,22 @@ export const DashboardCard = ({
   footer,
 }: DashboardCardProps) => {
   return (
-    <Card className="flex flex-col gap-1 py-5">
-      <CardHeader className="flex flex-row space-y-0 justify-between items-center py-1 text-sm">
-        <CardTitle className="font-medium text-sm">{title}</CardTitle>
-        {icon}
-      </CardHeader>
+    <section>
+      <Card className="flex flex-col gap-1 py-5">
+        <CardHeader className="flex flex-row space-y-0 justify-between items-center py-1 text-sm">
+          <CardTitle className="font-medium text-sm">{title}</CardTitle>
+          {icon}
+        </CardHeader>
 
-      <div>
-        <CardContent className="py-0 font-semibold text-2xl">
-          <Typography width={200}>{content}</Typography>
-        </CardContent>
-        <CardFooter className="py-0 text-muted-foreground text-xs">
-          <Typography width={200}>{footer}</Typography>
-        </CardFooter>
-      </div>
-    </Card>
+        <div>
+          <CardContent className="py-0 font-semibold text-2xl">
+            <Typography width={200}>{content}</Typography>
+          </CardContent>
+          <CardFooter className="py-0 text-muted-foreground text-xs">
+            <Typography width={200}>{footer}</Typography>
+          </CardFooter>
+        </div>
+      </Card>
+    </section>
   );
 };
