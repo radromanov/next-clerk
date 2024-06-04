@@ -8,7 +8,7 @@ interface MainProps
 
 export const DashboardMain = ({ children }: MainProps) => {
   return (
-    <main>
+    <main className="flex flex-col flex-grow px-8 py-6">
       <DashboardHeader />
 
       {children}
