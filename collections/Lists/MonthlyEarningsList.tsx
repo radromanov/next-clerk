@@ -9,7 +9,7 @@ const MonthlyEarningItem = ({ month }: MonthlyEarningItemProps) => {
   return (
     <li className="flex flex-col gap-2 justify-end h-full">
       <div
-        className="w-10 bg-foreground"
+        className="w-10 bg-foreground rounded-t-md"
         style={{
           height: `${percent()}%`,
         }}

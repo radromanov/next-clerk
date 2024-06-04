@@ -5,7 +5,7 @@ import {
   CreditCardIcon,
   ActivityIcon,
 } from "@/collections";
-import { DashboardCard } from "@/collections/Cards";
+import { DashboardCard, DashboardSales } from "@/collections/Cards";
 import { DashboardChart } from "@/collections/Charts";
 import { DashboardTab } from "@/collections/Tabs";
 
@@ -61,7 +61,10 @@ export const DashboardMain = () => {
         ))}
       </ul>
 
-      <DashboardChart />
+      <div className="flex gap-4">
+        <DashboardChart />
+        <DashboardSales />
+      </div>
     </>
   );
 };
