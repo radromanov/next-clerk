@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export const DashboardHeader = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center pb-5">
       <Heading>Dashboard</Heading>
 
       <div className="flex gap-2">

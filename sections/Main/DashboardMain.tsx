@@ -1,17 +1,12 @@
 import { DashboardHeader } from "@/collections";
+import { DashboardTab } from "@/collections/Tabs";
 
-interface MainProps
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLElement>,
-    HTMLElement
-  > {}
-
-export const DashboardMain = ({ children }: MainProps) => {
+export const DashboardMain = () => {
   return (
     <main className="flex flex-col flex-grow px-8 py-6">
       <DashboardHeader />
 
-      {children}
+      <DashboardTab />
     </main>
   );
 };
