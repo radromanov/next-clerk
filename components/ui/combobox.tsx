@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/popover";
 import { useUser } from "@clerk/nextjs";
 import Image from "next/image";
-import { Typography } from "../Typography/Typography";
+import { Typography } from "../Typography";
 
 interface ComboboxProps {
   elements: { value: string; label: string; image: string | null }[];

@@ -1,3 +1,5 @@
+import { DashboardHeader } from "@/collections";
+
 interface MainProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLElement>,
@@ -5,5 +7,11 @@ interface MainProps
   > {}
 
 export const DashboardMain = ({ children }: MainProps) => {
-  return <main>{children}</main>;
+  return (
+    <main>
+      <DashboardHeader />
+
+      {children}
+    </main>
+  );
 };
