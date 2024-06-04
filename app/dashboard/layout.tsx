@@ -1,5 +1,5 @@
 "use client";
-import { DashboardNav } from "@/sections";
+import { DashboardMain, DashboardNav } from "@/sections";
 import { useUser } from "@clerk/nextjs";
 
 interface DashboardLayoutProps {
@@ -15,7 +15,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
     <>
       <DashboardNav />
 
-      <main>{children}</main>
+      <DashboardMain>{children}</DashboardMain>
 
       <footer>Footer here</footer>
     </>
