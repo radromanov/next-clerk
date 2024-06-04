@@ -1,4 +1,5 @@
 "use client";
+import { Input } from "@/components/Inputs";
 import ListItem from "@/components/ListItem/ListItem";
 import { Combobox } from "@/components/ui/combobox";
 import { Menubar } from "@/components/ui/menubar";
@@ -32,13 +33,14 @@ const DashboardMenu = () => {
   return (
     <Menubar>
       <Combobox elements={initialComboboxItems} />
-      <nav className="flex">
+      <nav className="flex w-full items-center justify-between">
         <ul className="flex gap-4">
           {menuItems.map((item, i) => (
             <ListItem key={i}>{item.label}</ListItem>
           ))}
         </ul>
 
+        <Input name="search" placeholder="Search" />
         <UserButton />
       </nav>
     </Menubar>
