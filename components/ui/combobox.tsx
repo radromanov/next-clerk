@@ -122,7 +122,7 @@ export function Combobox({ elements }: ComboboxProps) {
           <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="flex flex-col p-0 gap-4 w-[235px]">
+      <PopoverContent className="flex flex-col p-0 gap-4 w-[226px]">
         <Command>
           <CommandInput placeholder="Search team..." />
 

@@ -1,8 +1,7 @@
 "use client";
 import { Input } from "@/components/Inputs";
-import ListItem from "@/components/ListItem/ListItem";
+import { ListItem } from "@/components/ListItem";
 import { Combobox } from "@/components/ui/combobox";
-import { Menubar } from "@/components/ui/menubar";
 import { UserButton } from "@clerk/nextjs";
 
 const menuItems: { value: string; label: string }[] = [
