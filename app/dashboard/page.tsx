@@ -1,8 +1,7 @@
-"use client";
-import { UserButton, useUser } from "@clerk/nextjs";
+import { DashboardMain } from "@/sections";
 
 const DashboardPage = () => {
-  return <div>Some content here</div>;
+  return <DashboardMain />;
 };
 
 export default DashboardPage;

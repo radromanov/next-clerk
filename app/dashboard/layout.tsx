@@ -1,5 +1,5 @@
 "use client";
-import { DashboardMain, DashboardNav } from "@/sections";
+import { DashboardNav } from "@/sections";
 import { useUser } from "@clerk/nextjs";
 
 interface DashboardLayoutProps {
@@ -15,7 +15,9 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
     <>
       <DashboardNav />
 
-      <DashboardMain>{children}</DashboardMain>
+      <main className="flex flex-col flex-grow px-8 py-6 gap-4">
+        {children}
+      </main>
 
       <footer>Footer here</footer>
     </>
