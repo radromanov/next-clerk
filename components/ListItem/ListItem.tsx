@@ -13,7 +13,7 @@ export const ListItem = ({ children, className, ...props }: ListItemProps) => {
   return (
     <li
       className={cn(
-        "text-sm text-neutral-500 cursor-pointer hover:text-black transition-colors",
+        "text-sm text-muted-foreground cursor-pointer hover:text-black transition-colors",
         className
       )}
       {...props}
