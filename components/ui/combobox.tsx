@@ -30,19 +30,19 @@ interface ImageDisplayProps {
 
 const ElementDisplay = ({ element }: ImageDisplayProps) => {
   return (
-    <div className="flex gap-1 justify-center items-center">
+    <div className="flex gap-1 justify-center items-center desktop-4k:gap-3">
       {element.image ? (
         <Image
           src={element.image}
           width={24}
           height={24}
           alt={element.label + " image"}
-          className="rounded-full"
+          className="rounded-full w-6 h-6 desktop-4k:w-10 desktop-4k:h-10"
         />
       ) : (
-        <div className="rounded-full bg-sky-400 w-6 h-6" />
+        <div className="rounded-full bg-sky-400 w-6 h-6 desktop-4k:w-10 desktop-4k:h-10" />
       )}
-      <Typography className="w-36 desktop-md:text-lg desktop-md:w-52">
+      <Typography className="w-36 desktop-md:text-md desktop-md:w-52 desktop-4k:text-xl">
         {element.label}
       </Typography>
     </div>
@@ -109,7 +109,7 @@ export function Combobox({ elements }: ComboboxProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="flex px-2 truncate items-center justify-between w-[216px] laptop-sm:w-[340px] laptop-sm:gap-4 laptop-sm:justify-normal laptop-md:justify-between desktop-md:w-[460px]"
+          className="flex px-2 truncate items-center justify-between w-[216px] laptop-sm:w-[340px] laptop-sm:gap-4 laptop-sm:justify-normal laptop-md:justify-between desktop-md:w-[400px] desktop-4k:w-[444px] desktop-4k:h-14"
         >
           {value ? (
             <ElementDisplay
@@ -124,11 +124,11 @@ export function Combobox({ elements }: ComboboxProps) {
           <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="flex flex-col p-0 gap-4 w-[248px] desktop-md:w-[332px]">
+      <PopoverContent className="flex flex-col p-0 gap-4 w-[248px] desktop-md:w-[312px] desktop-4k:w-[366px]">
         <Command>
           <CommandInput
             placeholder="Search team..."
-            className="desktop-md:placeholder:text-lg desktop-md:text-lg"
+            className="desktop-md:placeholder:text-md desktop-md:text-md desktop-4k:placeholder:text-2xl desktop-4k:text-2xl"
           />
 
           <CommandList>

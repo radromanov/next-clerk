@@ -23,7 +23,7 @@ const NavigationItem = ({ index, label }: { index: number; label: string }) => {
   return (
     <>
       <ListItem
-        className={`flex flex-col px-2 cursor-pointer text-muted-foreground hover:text-foreground focus:text-foreground active:text-foreground laptop-sm:text-sm desktop-md:text-lg desktop-lg:text-xl ${
+        className={`flex flex-col px-2 cursor-pointer text-muted-foreground hover:text-foreground focus:text-foreground active:text-foreground laptop-sm:text-sm desktop-md:text-md desktop-lg:text-lg desktop-4k:text-2xl ${
           index === 0 ? "text-black" : ""
         }`}
         onClick={() => setIsOpened((prev) => !prev)}
@@ -53,7 +53,7 @@ export const NavigationList = () => {
   return (
     <ul className="flex flex-col laptop-sm:flex-row gap-4 laptop-sm:gap-2">
       {menuItems.map((item, i) => (
-        <NavigationItem index={i} label={item.label} />
+        <NavigationItem key={i} index={i} label={item.label} />
       ))}
     </ul>
   );

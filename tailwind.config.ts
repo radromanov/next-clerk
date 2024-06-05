@@ -34,6 +34,9 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        md: ["16px", "24px"],
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },

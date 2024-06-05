@@ -45,10 +45,10 @@ export const DashboardSales = () => {
   return (
     <DashboardArticle className="w-full px-4">
       <div className="h-14">
-        <Subheading className="desktop-md:text-xl desktop-lg:text-2xl">
+        <Subheading className="desktop-md:text-lg desktop-lg:text-xl desktop-4k:text-3xl">
           Recent Sales
         </Subheading>
-        <Typography className="w-[222px] text-sm text-muted-foreground desktop-md:text-lg desktop-md:w-full desktop-lg:text-xl">
+        <Typography className="w-[222px] text-sm text-muted-foreground desktop-md:text-md desktop-md:w-full desktop-lg:text-lg desktop-4k:text-2xl">
           You made 265 sales this month.
         </Typography>
       </div>
@@ -59,20 +59,20 @@ export const DashboardSales = () => {
             <Image
               src={user.image}
               alt="User image"
-              className="border border-muted-foreground rounded-full w-8 h-8 laptop-sm:w-9 laptop-sm:h-9 desktop-md:w-11 desktop-md:h-11"
+              className="border border-muted-foreground rounded-full w-8 h-8 laptop-sm:w-9 laptop-sm:h-9 desktop-md:w-10 desktop-md:h-10 desktop-4k:h-12 desktop-4k:w-12"
             />
 
             <div className="flex items-center justify-between w-full h-full">
               <div className="flex-col w-full">
-                <Typography className="w-28 tablet-sm:w-full tablet-md:w-48 desktop-md:text-lg desktop-md:w-full desktop-lg:text-xl">
+                <Typography className="w-28 tablet-sm:w-full tablet-md:w-48 desktop-md:text-md desktop-md:w-full desktop-lg:text-lg desktop-4k:text-2xl">
                   {user.name}
                 </Typography>
-                <Typography className="w-28 text-sm text-muted-foreground tablet-sm:w-full tablet-md:w-48 desktop-md:text-lg desktop-md:w-full desktop-lg:text-xl">
+                <Typography className="w-28 text-sm text-muted-foreground tablet-sm:w-full tablet-md:w-48 desktop-md:text-md desktop-md:w-full desktop-lg:text-lg desktop-4k:text-2xl">
                   {user.email}
                 </Typography>
               </div>
 
-              <Typography className="text-clip text-xs text-end tablet-sm:text-sm desktop-md:text-lg desktop-lg:text-xl">
+              <Typography className="text-clip text-xs text-end tablet-sm:text-sm desktop-md:text-md desktop-lg:text-lg desktop-4k:text-2xl">
                 {user.amount}
               </Typography>
             </div>

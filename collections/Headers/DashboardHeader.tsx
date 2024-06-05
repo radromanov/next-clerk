@@ -9,7 +9,7 @@ export const DashboardHeader = () => {
 
       <div className="flex justify-between items-center w-full mobile-md:gap-2 laptop-sm:justify-end">
         <DatePickerWithRange />
-        <Button className="flex font-semibold text-xs px-2 mobile-md:px-3 mobile-lg:px-4 mobile-lg:text-sm desktop-lg:text-lg desktop-lg:h-12 desktop-lg:px-5">
+        <Button className="flex font-semibold text-xs px-2 mobile-md:px-3 mobile-lg:px-4 mobile-lg:text-sm desktop-lg:text-lg desktop-lg:h-12 desktop-lg:px-5 desktop-4k:text-2xl desktop-4k:h-14 desktop-4k:px-6">
           Download
         </Button>
       </div>
