@@ -7,17 +7,14 @@ const MonthlyEarningItem = ({ month }: MonthlyEarningItemProps) => {
   const percent = () => Math.floor(Math.random() * 80) + 1;
 
   return (
-    <li className="flex flex-col gap-2 justify-end h-full">
+    <li className="h-full flex flex-col items-center gap-1 justify-end">
       <div
-        className="w-10 bg-foreground rounded-t-md"
+        className="w-4 bg-foreground rounded-t-sm laptop-sm:rounded-t-md laptop-sm:w-10"
         style={{
           height: `${percent()}%`,
         }}
       />
-      <Typography
-        className="text-center text-muted-foreground text-xs"
-        width={40}
-      >
+      <Typography className="text-center text-muted-foreground text-xs w-fit">
         {month}
       </Typography>
     </li>
@@ -30,7 +27,7 @@ export const MonthlyEarningsList = () => {
   );
 
   return (
-    <ul className="flex h-full items-end justify-between gap-2">
+    <ul className="flex h-full items-end justify-between gap-1 laptop-sm:gap-2">
       {months.map((month, i) => (
         <MonthlyEarningItem key={i} month={month} />
       ))}

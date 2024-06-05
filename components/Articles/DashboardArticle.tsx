@@ -14,7 +14,7 @@ export const DashboardArticle = ({
   return (
     <article
       className={cn(
-        "flex flex-col gap-5 border shadow-sm rounded-md px-6 py-4",
+        "flex flex-col gap-5 border shadow-sm rounded-md laptop-sm:px-6 py-4",
         className
       )}
       {...props}

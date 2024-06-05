@@ -1,5 +1,5 @@
+import { CenterItems } from "@/components/Wrappers";
 import { SignUp } from "@clerk/nextjs";
-import { CenterItems } from "@/collections";
 
 const SignUpPage = () => {
   return (
