@@ -6,9 +6,9 @@ interface TypographyProps {
   className?: string;
 }
 
-export const Typography = ({ width, className, children }: TypographyProps) => {
+export const Typography = ({ className, children }: TypographyProps) => {
   return (
-    <p className={cn(`truncate`, className)} style={{ width: width || "100%" }}>
+    <p className={cn(`truncate`, className)}>
       <span>{children}</span>
     </p>
   );

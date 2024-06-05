@@ -43,38 +43,34 @@ const recentSales: {
 
 export const DashboardSales = () => {
   return (
-    <DashboardArticle className="w-full">
+    <DashboardArticle className="w-full px-4">
       <div className="h-14">
         <Subheading>Recent Sales</Subheading>
-        <Typography className="text-sm text-muted-foreground">
+        <Typography className="w-[222px] text-sm text-muted-foreground">
           You made 265 sales this month.
         </Typography>
       </div>
 
       <ul className="h-full flex flex-col gap-4">
         {recentSales.map((user, i) => (
-          <li key={i} className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-9 h-9">
-                <Image
-                  src={user.image}
-                  alt="User image"
-                  width={36}
-                  height={36}
-                  className="border border-muted-foreground rounded-full"
-                />
-              </div>
+          <li key={i} className="flex items-center gap-2 w-full">
+            <Image
+              src={user.image}
+              alt="User image"
+              className="border border-muted-foreground rounded-full w-8 h-8 laptop-sm:w-9 laptop-sm:h-9"
+            />
 
-              <div>
-                <Typography>{user.name}</Typography>
-                <Typography className="text-sm text-muted-foreground">
+            <div className="flex items-center justify-between w-full h-full">
+              <div className="flex-col">
+                <Typography className="w-28">{user.name}</Typography>
+                <Typography className="w-28 text-sm text-muted-foreground">
                   {user.email}
                 </Typography>
               </div>
-            </div>
 
-            <div>
-              <Typography>{user.amount}</Typography>
+              <Typography className="text-xs text-end">
+                {user.amount}
+              </Typography>
             </div>
           </li>
         ))}
