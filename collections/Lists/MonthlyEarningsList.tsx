@@ -14,7 +14,7 @@ const MonthlyEarningItem = ({ month }: MonthlyEarningItemProps) => {
           height: `${percent()}%`,
         }}
       />
-      <Typography className="text-center text-muted-foreground text-xs w-fit mobile-md:text-sm laptop-lg:text-md">
+      <Typography className="text-center text-muted-foreground text-xs w-fit mobile-md:text-sm laptop-lg:text-md desktop-md:text-lg">
         {month}
       </Typography>
     </li>

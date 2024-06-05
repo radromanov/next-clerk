@@ -23,16 +23,18 @@ export const DashboardCard = ({
   return (
     <article>
       <Card className="flex flex-col gap-1 py-5">
-        <CardHeader className="flex flex-row space-y-0 justify-between items-center py-1 text-sm">
-          <CardTitle className="font-medium text-sm">{title}</CardTitle>
+        <CardHeader className="flex flex-row space-y-0 justify-between items-center py-1">
+          <CardTitle className="font-medium text-sm desktop-md:text-lg">
+            {title}
+          </CardTitle>
           {icon}
         </CardHeader>
 
         <div>
-          <CardContent className="py-0 font-semibold text-2xl">
+          <CardContent className="py-0 font-semibold text-2xl desktop-md:text-3xl">
             <Typography width={200}>{content}</Typography>
           </CardContent>
-          <CardFooter className="py-0 text-muted-foreground text-xs">
+          <CardFooter className="py-0 text-muted-foreground text-xs desktop-md:text-lg">
             <Typography width={200}>{footer}</Typography>
           </CardFooter>
         </div>

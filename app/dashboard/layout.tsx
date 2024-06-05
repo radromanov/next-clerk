@@ -15,7 +15,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
     <>
       <DashboardNav />
 
-      <main className="flex flex-col flex-grow px-6 laptop-sm:px-8 py-6 gap-4">
+      <main className="flex flex-col flex-grow px-6 laptop-sm:px-8 py-6 gap-4 laptop-lg:max-w-[1600px] laptop-lg:px-8 laptop-lg:mr-auto laptop-lg:ml-auto">
         {children}
       </main>
     </>

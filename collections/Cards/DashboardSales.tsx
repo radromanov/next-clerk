@@ -45,8 +45,8 @@ export const DashboardSales = () => {
   return (
     <DashboardArticle className="w-full px-4">
       <div className="h-14">
-        <Subheading>Recent Sales</Subheading>
-        <Typography className="w-[222px] text-sm text-muted-foreground">
+        <Subheading className="desktop-md:text-xl">Recent Sales</Subheading>
+        <Typography className="w-[222px] text-sm text-muted-foreground desktop-md:text-lg desktop-md:w-full">
           You made 265 sales this month.
         </Typography>
       </div>
@@ -57,20 +57,20 @@ export const DashboardSales = () => {
             <Image
               src={user.image}
               alt="User image"
-              className="border border-muted-foreground rounded-full w-8 h-8 laptop-sm:w-9 laptop-sm:h-9"
+              className="border border-muted-foreground rounded-full w-8 h-8 laptop-sm:w-9 laptop-sm:h-9 desktop-md:w-11 desktop-md:h-11"
             />
 
             <div className="flex items-center justify-between w-full h-full">
               <div className="flex-col w-full">
-                <Typography className="w-28 tablet-sm:w-full tablet-md:w-48">
+                <Typography className="w-28 tablet-sm:w-full tablet-md:w-48 desktop-md:text-lg desktop-md:w-full">
                   {user.name}
                 </Typography>
-                <Typography className="w-28 text-sm text-muted-foreground tablet-sm:w-full tablet-md:w-48">
+                <Typography className="w-28 text-sm text-muted-foreground tablet-sm:w-full tablet-md:w-48 desktop-md:text-lg desktop-md:w-full">
                   {user.email}
                 </Typography>
               </div>
 
-              <Typography className="text-clip text-xs text-end tablet-sm:text-sm">
+              <Typography className="text-clip text-xs text-end tablet-sm:text-sm desktop-md:text-lg">
                 {user.amount}
               </Typography>
             </div>

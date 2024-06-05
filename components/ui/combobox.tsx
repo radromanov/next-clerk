@@ -42,7 +42,9 @@ const ElementDisplay = ({ element }: ImageDisplayProps) => {
       ) : (
         <div className="rounded-full bg-sky-400 w-6 h-6" />
       )}
-      <Typography className="w-36">{element.label}</Typography>
+      <Typography className="w-36 desktop-md:text-lg desktop-md:w-52">
+        {element.label}
+      </Typography>
     </div>
   );
 };
@@ -107,7 +109,7 @@ export function Combobox({ elements }: ComboboxProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="flex px-2 truncate items-center justify-between w-[216px] laptop-sm:w-[340px] laptop-sm:gap-4 laptop-sm:justify-normal laptop-md:justify-between"
+          className="flex px-2 truncate items-center justify-between w-[216px] laptop-sm:w-[340px] laptop-sm:gap-4 laptop-sm:justify-normal laptop-md:justify-between desktop-md:w-[460px]"
         >
           {value ? (
             <ElementDisplay
@@ -122,9 +124,12 @@ export function Combobox({ elements }: ComboboxProps) {
           <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="flex flex-col p-0 gap-4 w-[248px]">
+      <PopoverContent className="flex flex-col p-0 gap-4 w-[248px] desktop-md:w-[332px]">
         <Command>
-          <CommandInput placeholder="Search team..." />
+          <CommandInput
+            placeholder="Search team..."
+            className="desktop-md:placeholder:text-lg desktop-md:text-lg"
+          />
 
           <CommandList>
             <CommandListItems

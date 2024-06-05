@@ -5,7 +5,7 @@ import { DashboardArticle } from "@/components/Articles";
 export const DashboardChart = () => {
   return (
     <DashboardArticle className="px-4">
-      <Subheading>Overview</Subheading>
+      <Subheading className="desktop-md:text-xl">Overview</Subheading>
 
       <div className="relative h-[360px] flex gap-4">
         <EarningsList />
