@@ -23,16 +23,28 @@ const initialComboboxItems: {
 export const DashboardMenu = () => {
   return (
     <>
-      <div className="flex flex-grow gap-4">
+      <div className="flex flex-col flex-grow gap-2 laptop-sm:flex-row">
         <Combobox elements={initialComboboxItems} />
+        <Input
+          name="search"
+          placeholder="Search"
+          className="h-8 border-x-0 rounded-none laptop-sm:hidden"
+        />
 
         <nav className="flex w-full items-center justify-between">
           <NavigationList />
         </nav>
       </div>
 
-      <div className="flex gap-4">
-        <Input name="search" placeholder="Search" />
+      <div className="w-full border-t shadow-sm laptop-sm:hidden" />
+
+      <div className="flex p-2 laptop-sm:gap-2">
+        <Input
+          className="hidden laptop-sm:inline-block"
+          name="search"
+          placeholder="Search"
+        />
+
         <div className="flex items-center">
           <UserButton />
         </div>

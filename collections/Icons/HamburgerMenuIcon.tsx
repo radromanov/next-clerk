@@ -10,7 +10,7 @@ export const HamburgerMenuIcon = ({
   return (
     <Icon
       className={cn(
-        "absolute h-5 w-5 text-foreground mx-2 my-2 active:transform active:rotate-90 transition-transform duration-300",
+        "absolute h-4 w-4 text-foreground mx-2 my-2 active:transform active:rotate-90 transition-transform duration-300",
         className
       )}
       {...props}

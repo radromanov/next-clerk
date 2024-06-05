@@ -30,7 +30,7 @@ interface ImageDisplayProps {
 
 const ElementDisplay = ({ element }: ImageDisplayProps) => {
   return (
-    <div className="flex gap-2 justify-center items-center">
+    <div className="flex gap-1 justify-center items-center">
       {element.image ? (
         <Image
           src={element.image}
@@ -107,7 +107,7 @@ export function Combobox({ elements }: ComboboxProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="flex min-w-max w-[300px] px-2 gap-4 truncate items-center"
+          className="flex min-w-max px-2 truncate items-center justify-between laptop-sm:w-[256px] laptop-sm:gap-4 laptop-sm:justify-normal"
         >
           {value ? (
             <ElementDisplay
