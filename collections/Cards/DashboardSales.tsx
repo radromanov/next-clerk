@@ -61,14 +61,16 @@ export const DashboardSales = () => {
             />
 
             <div className="flex items-center justify-between w-full h-full">
-              <div className="flex-col">
-                <Typography className="w-28">{user.name}</Typography>
-                <Typography className="w-28 text-sm text-muted-foreground">
+              <div className="flex-col w-full">
+                <Typography className="w-28 tablet-sm:w-full tablet-md:w-48">
+                  {user.name}
+                </Typography>
+                <Typography className="w-28 text-sm text-muted-foreground tablet-sm:w-full tablet-md:w-48">
                   {user.email}
                 </Typography>
               </div>
 
-              <Typography className="text-xs text-end">
+              <Typography className="text-clip text-xs text-end tablet-sm:text-sm">
                 {user.amount}
               </Typography>
             </div>

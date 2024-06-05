@@ -50,7 +50,7 @@ export const DashboardMain = () => {
         <DashboardTab />
       </div>
 
-      <ul className="grid grid-cols-1 gap-4">
+      <ul className="grid grid-cols-1 gap-4 tablet-sm:grid-cols-2">
         {informationCards.map((card, i) => (
           <li key={i}>
             <DashboardCard
@@ -63,7 +63,7 @@ export const DashboardMain = () => {
         ))}
       </ul>
 
-      <div className="grid grid-cols-1 laptop-sm:flex gap-4 max-h-[444px]">
+      <div className="grid grid-cols-1 tablet-md:grid-cols-2 laptop-sm:flex gap-4 max-h-[444px]">
         <DashboardChart />
         <DashboardSales />
       </div>

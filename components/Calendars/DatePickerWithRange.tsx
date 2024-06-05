@@ -28,18 +28,23 @@ export const DatePickerWithRange = ({
   });
 
   return (
-    <div className={cn("grid gap-2 laptop-sm:min-w-max", className)}>
+    <div
+      className={cn(
+        "grid gap-2 mobile-md:w-full tablet-sm:max-w-[276px] laptop-sm:min-w-max",
+        className
+      )}
+    >
       <Popover>
         <PopoverTrigger asChild>
           <Button
             id="date"
             variant={"outline"}
             className={cn(
-              "text-xs justify-start text-left font-normal px-1 laptop-s:w-[300px]",
+              "text-xs justify-start text-left font-normal px-1 mobile-md:px-2 mobile-md:text-sm",
               !date && "text-muted-foreground"
             )}
           >
-            <CalendarIcon className="mr-2 h-3 w-3" />
+            <CalendarIcon className="mr-2 h-3 w-3 mobile-md:h-4 mobile-md:w-4" />
             {date?.from ? (
               date.to ? (
                 <>
