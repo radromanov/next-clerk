@@ -12,13 +12,7 @@ interface ListItemProps
 
 export const ListItem = ({ children, className, ...props }: ListItemProps) => {
   return (
-    <li
-      className={cn(
-        "text-sm text-muted-foreground cursor-pointer hover:text-black transition-colors",
-        className
-      )}
-      {...props}
-    >
+    <li className={cn("text-sm", className)} {...props}>
       <Typography>{children}</Typography>
     </li>
   );

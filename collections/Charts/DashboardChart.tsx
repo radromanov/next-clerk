@@ -1,9 +1,10 @@
 import { Subheading } from "@/components/Typography";
 import { EarningsList, MonthlyEarningsList } from "../Lists";
+import { DashboardArticle } from "@/components/Articles";
 
 export const DashboardChart = () => {
   return (
-    <section className="flex flex-col gap-5 border border-neutral-300 shadow rounded-md px-6 py-4">
+    <DashboardArticle>
       <Subheading>Overview</Subheading>
 
       <div className="h-[360px] flex gap-4">
@@ -13,6 +14,6 @@ export const DashboardChart = () => {
           <MonthlyEarningsList />
         </div>
       </div>
-    </section>
+    </DashboardArticle>
   );
 };

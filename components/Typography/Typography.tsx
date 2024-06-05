@@ -8,10 +8,7 @@ interface TypographyProps {
 
 export const Typography = ({ width, className, children }: TypographyProps) => {
   return (
-    <p
-      className={cn(`text-start truncate`, className)}
-      style={{ width: width || "100%" }}
-    >
+    <p className={cn(`truncate`, className)} style={{ width: width || "100%" }}>
       <span>{children}</span>
     </p>
   );

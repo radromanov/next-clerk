@@ -61,7 +61,7 @@ export const DashboardMain = () => {
         ))}
       </ul>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 max-h-[444px]">
         <DashboardChart />
         <DashboardSales />
       </div>

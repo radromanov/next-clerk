@@ -1,3 +1,4 @@
+import { DashboardArticle } from "@/components/Articles";
 import { Subheading, Typography } from "@/components/Typography";
 import userImage from "@/resources/defaultuserimage.png";
 import Image, { StaticImageData } from "next/image";
@@ -42,8 +43,8 @@ const recentSales: {
 
 export const DashboardSales = () => {
   return (
-    <article className="flex flex-grow flex-col gap-5 border border-neutral-300 shadow rounded-md px-6 py-4">
-      <div>
+    <DashboardArticle className="w-full">
+      <div className="h-14">
         <Subheading>Recent Sales</Subheading>
         <Typography className="text-sm text-muted-foreground">
           You made 265 sales this month.
@@ -78,6 +79,6 @@ export const DashboardSales = () => {
           </li>
         ))}
       </ul>
-    </article>
+    </DashboardArticle>
   );
 };

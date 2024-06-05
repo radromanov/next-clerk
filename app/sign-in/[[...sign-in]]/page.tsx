@@ -1,5 +1,5 @@
 import { SignIn } from "@clerk/nextjs";
-import { CenterItems } from "@/collections/Wrappers";
+import { CenterItems } from "@/components/Wrappers";
 
 const SignInPage = () => {
   return (
