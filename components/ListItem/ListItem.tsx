@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import React from "react";
+import { Typography } from "../Typography";
 
 interface ListItemProps
   extends React.DetailedHTMLProps<
@@ -18,7 +19,7 @@ export const ListItem = ({ children, className, ...props }: ListItemProps) => {
       )}
       {...props}
     >
-      {children}
+      <Typography>{children}</Typography>
     </li>
   );
 };

@@ -21,7 +21,7 @@ export const DashboardCard = ({
   footer,
 }: DashboardCardProps) => {
   return (
-    <section>
+    <article>
       <Card className="flex flex-col gap-1 py-5">
         <CardHeader className="flex flex-row space-y-0 justify-between items-center py-1 text-sm">
           <CardTitle className="font-medium text-sm">{title}</CardTitle>
@@ -37,6 +37,6 @@ export const DashboardCard = ({
           </CardFooter>
         </div>
       </Card>
-    </section>
+    </article>
   );
 };
