@@ -8,7 +8,7 @@ export const EarningsList = () => {
       {earningBreakponts.map((earning, i) => (
         <ListItem
           key={i}
-          className="text-end text-xs text-muted-foreground laptop-lg:text-sm desktop-md:text-lg"
+          className="text-end text-xs text-muted-foreground laptop-lg:text-sm desktop-md:text-lg desktop-lg:text-xl"
         >
           {earning}
         </ListItem>

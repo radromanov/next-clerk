@@ -42,7 +42,7 @@ export const DashboardMenu = () => {
 
       <div className="flex p-2 laptop-sm:gap-2">
         <Input
-          className="hidden laptop-sm:inline-block desktop-md:placeholder:text-lg desktop-md:w-[360px] desktop-md:text-lg"
+          className="hidden laptop-sm:inline-block desktop-md:placeholder:text-lg desktop-md:w-[360px] desktop-md:text-lg desktop-lg:text-xl desktop-lg:palceholder:text-xl"
           name="search"
           placeholder="Search"
         />

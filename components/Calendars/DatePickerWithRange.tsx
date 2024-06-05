@@ -40,11 +40,11 @@ export const DatePickerWithRange = ({
             id="date"
             variant={"outline"}
             className={cn(
-              "text-xs justify-start text-left font-normal px-1 mobile-md:px-2 mobile-md:text-sm laptop-lg:text-md desktop-md:text-lg desktop-md:w-[360px] desktop-md:h-11 desktop-md:px-4",
+              "text-xs justify-start text-left font-normal px-1 mobile-md:px-2 mobile-md:text-sm laptop-lg:text-md desktop-md:text-lg desktop-md:w-[360px] desktop-md:h-11 desktop-md:px-4 desktop-lg:h-12 desktop-lg:text-xl",
               !date && "text-muted-foreground"
             )}
           >
-            <CalendarIcon className="mr-2 h-3 w-3 mobile-md:h-4 mobile-md:w-4" />
+            <CalendarIcon className="mr-2 h-3 w-3 mobile-md:h-4 mobile-md:w-4 desktop-lg:h-5 desktop-lg:w-5" />
             {date?.from ? (
               date.to ? (
                 <>

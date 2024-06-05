@@ -9,12 +9,12 @@ const MonthlyEarningItem = ({ month }: MonthlyEarningItemProps) => {
   return (
     <li className="h-full flex flex-col items-center gap-1 justify-end">
       <div
-        className="w-4 bg-foreground rounded-t-sm mobile-md:w-5 tablet-sm:w-7 tablet-sm:rounded-t-md laptop-sm:w-8 laptop-lg:w-10"
+        className="w-4 bg-foreground rounded-t-sm mobile-md:w-5 tablet-sm:w-7 tablet-sm:rounded-t-md laptop-sm:w-8 laptop-lg:w-10 desktop-lg:w-11"
         style={{
           height: `${percent()}%`,
         }}
       />
-      <Typography className="text-center text-muted-foreground text-xs w-fit mobile-md:text-sm laptop-lg:text-md desktop-md:text-lg">
+      <Typography className="text-center text-muted-foreground text-xs w-fit mobile-md:text-sm laptop-lg:text-md desktop-md:text-lg desktop-lg:text-xl">
         {month}
       </Typography>
     </li>
@@ -27,7 +27,7 @@ export const MonthlyEarningsList = () => {
   );
 
   return (
-    <ul className="flex h-full items-end justify-between gap-1 mobile-md:gap-2 tablet-sm:gap-3 laptop-sm:gap-2">
+    <ul className="flex h-full items-end justify-between gap-1 mobile-md:gap-2 tablet-sm:gap-3 laptop-sm:gap-2 desktop-lg:gap-3">
       {months.map((month, i) => (
         <MonthlyEarningItem key={i} month={month} />
       ))}

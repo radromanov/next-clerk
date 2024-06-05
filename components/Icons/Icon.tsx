@@ -12,7 +12,10 @@ export const Icon = ({ children, className, ...props }: IconProps) => {
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      className={cn("h-4 w-4 text-muted-foreground", className)}
+      className={cn(
+        "h-4 w-4 text-muted-foreground desktop-lg:h-6 desktop-lg:w-6",
+        className
+      )}
       {...props}
     >
       {children}
