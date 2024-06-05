@@ -50,7 +50,7 @@ export const DashboardMain = () => {
         <DashboardTab />
       </div>
 
-      <ul className="grid grid-cols-1 gap-4 tablet-sm:grid-cols-2">
+      <ul className="grid grid-cols-1 gap-4 tablet-sm:grid-cols-2 laptop-sm:grid-cols-4">
         {informationCards.map((card, i) => (
           <li key={i}>
             <DashboardCard

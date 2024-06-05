@@ -23,15 +23,15 @@ const NavigationItem = ({ index, label }: { index: number; label: string }) => {
   return (
     <>
       <ListItem
-        className={`flex flex-col px-2 cursor-pointer text-muted-foreground
-hover:text-foreground focus:text-foreground active:text-foreground 
-${index === 0 ? "text-black" : ""}`}
+        className={`flex flex-col px-2 cursor-pointer text-muted-foreground hover:text-foreground focus:text-foreground active:text-foreground laptop-sm:text-sm ${
+          index === 0 ? "text-black" : ""
+        }`}
         onClick={() => setIsOpened((prev) => !prev)}
       >
         {label}
       </ListItem>
       {isOpened && (
-        <nav className="container flex flex-col gap-2">
+        <nav className="container flex flex-col gap-2 laptop-sm:hidden">
           {childrenItems.map((child, i) => (
             <li
               key={i}
@@ -51,7 +51,7 @@ ${index === 0 ? "text-black" : ""}`}
 
 export const NavigationList = () => {
   return (
-    <ul className="flex flex-col laptop-sm:flex-row gap-4">
+    <ul className="flex flex-col laptop-sm:flex-row gap-4 laptop-sm:gap-2">
       {menuItems.map((item, i) => (
         <NavigationItem index={i} label={item.label} />
       ))}

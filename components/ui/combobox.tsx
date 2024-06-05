@@ -107,7 +107,7 @@ export function Combobox({ elements }: ComboboxProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="flex px-2 truncate items-center justify-between w-[216px] laptop-sm:w-[256px] laptop-sm:gap-4 laptop-sm:justify-normal"
+          className="flex px-2 truncate items-center justify-between w-[216px] laptop-sm:w-[340px] laptop-sm:gap-4 laptop-sm:justify-normal"
         >
           {value ? (
             <ElementDisplay
