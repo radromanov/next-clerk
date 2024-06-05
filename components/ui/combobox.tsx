@@ -42,7 +42,7 @@ const ElementDisplay = ({ element }: ImageDisplayProps) => {
       ) : (
         <div className="rounded-full bg-sky-400 w-6 h-6" />
       )}
-      <Typography width={144}>{element.label}</Typography>
+      <Typography className="w-36">{element.label}</Typography>
     </div>
   );
 };
@@ -107,7 +107,7 @@ export function Combobox({ elements }: ComboboxProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="flex min-w-max px-2 truncate items-center justify-between laptop-sm:w-[256px] laptop-sm:gap-4 laptop-sm:justify-normal"
+          className="flex px-2 truncate items-center justify-between w-[216px] laptop-sm:w-[256px] laptop-sm:gap-4 laptop-sm:justify-normal"
         >
           {value ? (
             <ElementDisplay

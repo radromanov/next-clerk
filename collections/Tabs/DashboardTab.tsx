@@ -4,7 +4,7 @@ export const DashboardTab = () => {
   return (
     <nav>
       <Tabs defaultValue="overview" className="w-[400px]">
-        <TabsList>
+        <TabsList className="flex flex-col bg-background">
           <TabsTrigger value="overview">Overview</TabsTrigger>
           <TabsTrigger disabled value="analytics">
             Analytics

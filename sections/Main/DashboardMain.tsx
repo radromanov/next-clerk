@@ -46,7 +46,9 @@ export const DashboardMain = () => {
     <>
       <DashboardHeader />
 
-      <DashboardTab />
+      <div className="hidden laptop-sm:inline-block">
+        <DashboardTab />
+      </div>
 
       <ul className="grid grid-cols-1 gap-4">
         {informationCards.map((card, i) => (

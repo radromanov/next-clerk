@@ -2,6 +2,7 @@ import { Input } from "@/components/Inputs";
 import { Combobox } from "@/components/ui/combobox";
 import { UserButton } from "@clerk/nextjs";
 import { NavigationList } from "../Lists";
+import { CloseIcon } from "../Icons";
 
 const initialComboboxItems: {
   value: string;
@@ -25,6 +26,7 @@ export const DashboardMenu = () => {
     <>
       <div className="flex flex-col flex-grow gap-2 laptop-sm:flex-row">
         <Combobox elements={initialComboboxItems} />
+
         <Input
           name="search"
           placeholder="Search"

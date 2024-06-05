@@ -15,11 +15,9 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
     <>
       <DashboardNav />
 
-      <main className="flex flex-col flex-grow px-8 py-6 gap-4">
+      <main className="flex flex-col flex-grow px-6 laptop-sm:px-8 py-6 gap-4">
         {children}
       </main>
-
-      <footer>Footer here</footer>
     </>
   );
 };
