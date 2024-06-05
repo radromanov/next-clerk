@@ -63,7 +63,7 @@ export const DashboardMain = () => {
         ))}
       </ul>
 
-      <div className="grid grid-cols-1 tablet-md:grid-cols-2 laptop-sm:flex gap-4 max-h-[444px]">
+      <div className="grid grid-cols-1 tablet-md:grid-cols-2 gap-4 max-h-[444px]">
         <DashboardChart />
         <DashboardSales />
       </div>

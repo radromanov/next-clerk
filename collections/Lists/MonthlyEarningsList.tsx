@@ -9,12 +9,12 @@ const MonthlyEarningItem = ({ month }: MonthlyEarningItemProps) => {
   return (
     <li className="h-full flex flex-col items-center gap-1 justify-end">
       <div
-        className="w-4 bg-foreground rounded-t-sm mobile-md:w-5 tablet-sm:w-7 tablet-sm:rounded-t-md laptop-sm:w-8"
+        className="w-4 bg-foreground rounded-t-sm mobile-md:w-5 tablet-sm:w-7 tablet-sm:rounded-t-md laptop-sm:w-8 laptop-lg:w-10"
         style={{
           height: `${percent()}%`,
         }}
       />
-      <Typography className="text-center text-muted-foreground text-xs w-fit mobile-md:text-sm">
+      <Typography className="text-center text-muted-foreground text-xs w-fit mobile-md:text-sm laptop-lg:text-md">
         {month}
       </Typography>
     </li>

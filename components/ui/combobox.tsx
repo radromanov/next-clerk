@@ -107,7 +107,7 @@ export function Combobox({ elements }: ComboboxProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="flex px-2 truncate items-center justify-between w-[216px] laptop-sm:w-[340px] laptop-sm:gap-4 laptop-sm:justify-normal"
+          className="flex px-2 truncate items-center justify-between w-[216px] laptop-sm:w-[340px] laptop-sm:gap-4 laptop-sm:justify-normal laptop-md:justify-between"
         >
           {value ? (
             <ElementDisplay
@@ -122,7 +122,7 @@ export function Combobox({ elements }: ComboboxProps) {
           <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="flex flex-col p-0 gap-4 w-[226px]">
+      <PopoverContent className="flex flex-col p-0 gap-4 w-[248px]">
         <Command>
           <CommandInput placeholder="Search team..." />
 

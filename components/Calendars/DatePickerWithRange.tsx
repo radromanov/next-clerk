@@ -40,7 +40,7 @@ export const DatePickerWithRange = ({
             id="date"
             variant={"outline"}
             className={cn(
-              "text-xs justify-start text-left font-normal px-1 mobile-md:px-2 mobile-md:text-sm",
+              "text-xs justify-start text-left font-normal px-1 mobile-md:px-2 mobile-md:text-sm laptop-lg:text-md",
               !date && "text-muted-foreground"
             )}
           >
